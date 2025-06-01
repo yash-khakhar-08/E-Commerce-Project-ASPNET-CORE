@@ -1,0 +1,12 @@
+D:\ASP.NET\MarketMatrix_Models\bin\Debug\net7.0\MarketMatrix_Models.deps.json
+D:\ASP.NET\MarketMatrix_Models\bin\Debug\net7.0\MarketMatrix_Models.dll
+D:\ASP.NET\MarketMatrix_Models\bin\Debug\net7.0\MarketMatrix_Models.pdb
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\MarketMatrix_Models.csproj.AssemblyReference.cache
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\MarketMatrix_Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\MarketMatrix_Models.AssemblyInfoInputs.cache
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\MarketMatrix_Models.AssemblyInfo.cs
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\MarketMatrix_Models.csproj.CoreCompileInputs.cache
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\MarketMatrix_Models.dll
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\refint\MarketMatrix_Models.dll
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\MarketMatrix_Models.pdb
+D:\ASP.NET\MarketMatrix_Models\obj\Debug\net7.0\ref\MarketMatrix_Models.dll
