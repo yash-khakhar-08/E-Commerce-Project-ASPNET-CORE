@@ -11,5 +11,24 @@ MarketMatrix is a online shopping project built with ASP.NET Core MVC. This web 
 The backend used ASP.NET Core MVC for clean, structured code with a repository layer, Entity Framwork for efficient database operations using SQL Server, and Identity Framework to protect user data with authentication and role-based authorization.
 
 Features (User side):-<br>
-✅ User authentication (Login/Register)
+✅ User authentication (Login/Register)<br>
+✅ Product listing & search<br>
+✅ Add to cart and place order ✅ View order and cancel order<br>
+✅ Forgor Password using email<br>
+
+Features (Admin side):-<br>
+✅ Admin authentication (Login)<br>
+✅ Add category and Product<br>
+✅ Update Order Status (Pending, Delivered, Rejected)<br>
+✅ View Customer Details<br>
+
+# Technologies Used:-  
+ASP.NET Core MVC Architecture (Backend) (.NET 7.0 version)<br>
+HTML | Bootstrap | AJAX (Frontend)<br>
+SQL Server (Database)<br>
+ASP.NET Entity Framework (Simplified database management)<br>
+ASP.NET Identity Framework (Role based Authentication and Authorization)<br>
+IEmail Sender (for passoword reset)<br>
+Visual Studio 2022 Editor
+
 
