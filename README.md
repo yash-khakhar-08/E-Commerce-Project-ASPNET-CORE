@@ -38,6 +38,12 @@ SQL Server (Database)<br>
 ASP.NET Entity Framework (Simplified database management)<br>
 ASP.NET Identity Framework (Role based Authentication and Authorization)<br>
 IEmail Sender (for passoword reset)<br>
-Visual Studio 2022 Editor
+Visual Studio 2022 Editor<br>
+
+# Screenshots:-
+1. Customer Side:<br>
+
+A. Home Page:
+![Screenshot (246)](https://github.com/user-attachments/assets/e7017b57-0274-4d67-81f9-3267f0c317f3)
 
 
