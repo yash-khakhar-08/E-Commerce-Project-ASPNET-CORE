@@ -6,6 +6,13 @@
 
 5. Open  E-commerce-Project-ASPNET-Core-master folder -> MarketMatrix.sln (thus project will be opened and u must have visual studio editor)
 
+# Update appsettings.json file
+![Screenshot (245)](https://github.com/user-attachments/assets/76765fad-dd36-4915-b02a-eb671fc9d83f)  
+-> in this define database connection url, which will look like this:  
+  -> Server=LAPTOP-0HQRNHSO\\SQLEXPRESS;Database=marketmatrix;Trusted_Connection=True;TrustServerCertificate=True (update this according to your server name in SSMS)
+-> In EmailSettings, define your gmail and gmail-app password for sending email used for password reset.
+
+
 # Introduction of Project:-
 MarketMatrix is a online shopping project built with ASP.NET Core MVC. This web application provides a good user experience through a frontend developed with HTML, Bootstrap, JavaScript, and AJAX.
 
