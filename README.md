@@ -43,7 +43,32 @@ Visual Studio 2022 Editor<br>
 # Screenshots:-
 1. Customer Side:<br>
 
-A. Home Page:
+A. Landing Page:
 ![Screenshot (246)](https://github.com/user-attachments/assets/e7017b57-0274-4d67-81f9-3267f0c317f3)
+
+B. Men Section:
+![Screenshot (247)](https://github.com/user-attachments/assets/31797b0b-d5ca-488e-8311-f6a7405718e0)
+
+C. Login Page:
+![Screenshot (248)](https://github.com/user-attachments/assets/9dd58a3b-b43c-47ea-89a6-337de1245c15)
+
+D. Register Page:
+![Screenshot (249)](https://github.com/user-attachments/assets/92e2e5c2-4fb0-44dc-ab4c-2d487579b172)
+
+E. Shopping Cart Page:
+![Screenshot (250)](https://github.com/user-attachments/assets/b5dcd0ae-d84a-460e-a451-1f840086cf56)
+
+F. Checkout Page:
+![Screenshot (251)](https://github.com/user-attachments/assets/255308bd-b8eb-4dc3-8c53-c5e4cfa2a90c)
+
+G. Profile Page:
+![Screenshot (252)](https://github.com/user-attachments/assets/c2e86470-7897-4b5d-bca2-e328796c6187)
+
+
+
+
+
+
+
 
 
