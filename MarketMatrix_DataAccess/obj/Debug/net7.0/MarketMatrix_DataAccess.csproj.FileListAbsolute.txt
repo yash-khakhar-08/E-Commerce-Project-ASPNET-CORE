@@ -1,0 +1,17 @@
+D:\ASP.NET\MarketMatrix_DataAccess\bin\Debug\net7.0\MarketMatrix_DataAccess.deps.json
+D:\ASP.NET\MarketMatrix_DataAccess\bin\Debug\net7.0\MarketMatrix_DataAccess.runtimeconfig.json
+D:\ASP.NET\MarketMatrix_DataAccess\bin\Debug\net7.0\MarketMatrix_DataAccess.dll
+D:\ASP.NET\MarketMatrix_DataAccess\bin\Debug\net7.0\MarketMatrix_DataAccess.pdb
+D:\ASP.NET\MarketMatrix_DataAccess\bin\Debug\net7.0\MarketMatrix_Models.dll
+D:\ASP.NET\MarketMatrix_DataAccess\bin\Debug\net7.0\MarketMatrix_Models.pdb
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.csproj.AssemblyReference.cache
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.AssemblyInfoInputs.cache
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.AssemblyInfo.cs
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.csproj.CoreCompileInputs.cache
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.csproj.CopyComplete
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.dll
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\refint\MarketMatrix_DataAccess.dll
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.pdb
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\MarketMatrix_DataAccess.genruntimeconfig.cache
+D:\ASP.NET\MarketMatrix_DataAccess\obj\Debug\net7.0\ref\MarketMatrix_DataAccess.dll
