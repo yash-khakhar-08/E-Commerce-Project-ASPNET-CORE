@@ -41,7 +41,7 @@ IEmail Sender (for passoword reset)<br>
 Visual Studio 2022 Editor<br>
 
 # Screenshots:-
-1. Customer Side:<br>
+1. Customer Side:-<br>
 
 A. Landing Page:
 ![Screenshot (246)](https://github.com/user-attachments/assets/e7017b57-0274-4d67-81f9-3267f0c317f3)
@@ -63,6 +63,27 @@ F. Checkout Page:
 
 G. Profile Page:
 ![Screenshot (252)](https://github.com/user-attachments/assets/c2e86470-7897-4b5d-bca2-e328796c6187)
+
+
+2. Admin Side:-<br>
+
+A. Home Page:
+![Screenshot (253)](https://github.com/user-attachments/assets/ff1ef165-916b-44e4-97fe-d704e5e5950e)
+
+B. Categories List Page:
+![Screenshot (254)](https://github.com/user-attachments/assets/f701aaf4-d788-4ec2-9886-507cd3fb2f3c)
+
+C. Product List Page:
+![Screenshot (255)](https://github.com/user-attachments/assets/99bc26b4-024c-4ca7-ad91-6617233a3fe3)
+
+D. Pending Orders Page:
+![Screenshot (256)](https://github.com/user-attachments/assets/f86aa41d-f2be-4f62-92cd-935442473881)
+
+E. Customer Details Page:
+![Screenshot (257)](https://github.com/user-attachments/assets/ec7a9dc3-fa94-4abf-817b-0451bcba7417)
+
+Note: If any error comes while running the project, or gets difficulty in installation of project, contact me:
+Email: yashkhakhkhar455@gmail.com
 
 
 
