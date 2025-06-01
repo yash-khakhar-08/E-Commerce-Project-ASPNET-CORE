@@ -82,7 +82,7 @@ D. Pending Orders Page:
 E. Customer Details Page:
 ![Screenshot (257)](https://github.com/user-attachments/assets/ec7a9dc3-fa94-4abf-817b-0451bcba7417)
 
-Note: If any error comes while running the project, or gets difficulty in installation of project, contact me:
+Note: If any error comes while running the project, or gets difficulty in installation of project, contact me:<br>
 Email: yashkhakhkhar455@gmail.com
 
 
