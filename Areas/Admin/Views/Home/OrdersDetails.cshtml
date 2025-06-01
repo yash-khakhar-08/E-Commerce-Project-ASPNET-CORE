@@ -1,0 +1,85 @@
+﻿@{
+	ViewData["Title"] = "Order Details";
+}
+
+@model Orders
+
+<h2>Order Details</h2>
+
+<div class="container-fluid mt-1 p-1" >
+    <div class="row align-start-items">
+
+        <div class="col-md-4 col-sm-4 col-4 px-1 mb-2">
+            <div class="product-card">
+                
+                <img src="@Model.Products.ImageUrl" alt="Product Image" class="product-img"  style="height:400px;">
+
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-4 px-1 mb-2">
+            <div class="product-card">
+
+                <div class="product-info">
+                    <h5>Product Information</h5>
+
+                    <p>Product Name: @(Model.Products.Name.Length > 21 ? Model.Products.Name.Substring(0, 18) + "..." : Model.Products.Name)</p>
+                    <p>Quantity: <strong>@Model.Quantity</strong></p>
+                    <p>Total Amount Paid: <strong>@Model.total rs.</strong></p>
+                    <p>Payment Mode: <strong>@Model.PaymentMode</strong></p>
+                    <p>Date of Order: <strong>@Model.DateTime.ToString("yyyy-MM-dd")</strong></p>
+                    <p>Status: <strong>@Model.status</strong></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-4 px-1 mb-2">
+            <div class="product-card">
+
+                <div class="product-info">
+                    <h5>User Infomation</h5>
+
+                    <p>UserName: @Model.User.UserName</p>
+
+                    <p>Full Name: 
+                        @if (string.IsNullOrEmpty(Model.User.Name))
+                        {
+                            <strong>null</strong>
+                        }
+                        else
+                        {
+                            <strong>@Model.User.Name</strong>
+                        }
+                    </p>
+                    
+                    <p>
+                        Phone Number:
+                        @if (string.IsNullOrEmpty(Model.User.PhoneNumber))
+                        {
+                            <strong>null</strong>
+                        }
+                        else
+                        {
+                            <strong>@Model.User.PhoneNumber</strong>
+                        }
+                    </p>
+
+                    <p>
+                        Address:
+                        @if (ViewData["address"] != null)
+                        {
+                            <strong>@ViewData["address"]</strong>
+                        }else
+                        {
+                            <strong>null</strong>
+                        }
+                         
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

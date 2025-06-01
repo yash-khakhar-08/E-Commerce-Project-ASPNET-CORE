@@ -1,0 +1,20 @@
+﻿.functions {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5%;
+    width:20%;
+    margin:2%;
+}
+
+.grid-item:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+}

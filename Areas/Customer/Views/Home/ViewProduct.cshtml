@@ -1,0 +1,132 @@
+﻿@model Products
+
+@{
+    ViewData["Title"] = Model.Name;
+
+    var cartItems = ViewBag.CartItems as List<MyCart>;
+
+    var Products = ViewBag.ProductsList as List<Products>;
+}
+
+<div class="container-fluid mt-4 pl-4 pt-2 pr-4 pb-5">
+    <div class="row">
+        <!-- Product Card -->
+        <div class="col-md-4 col-sm-6 col-12">
+            <div class="product-card">
+                <img src="@Model.ImageUrl" alt="Product Image" class="product-img w-100 h-50">
+            </div>
+        </div>
+
+        <!-- Product Info (On the Right) -->
+        <div class="col-md-8 col-sm-6 col-12 d-flex flex-column justify-content-center">
+            <h3 class="text-primary font-weight-bold">@Model.Name</h3>
+            <p class="text-muted"><strong>Price:</strong> @Model.Price rs</p>
+            <p class="text-secondary"><strong>Color:</strong> @Model.Color</p>
+            <p class="text-secondary"><strong>Description:</strong> @Model.Description</p>
+            <p class="text-secondary"><strong>Stock:</strong> @Model.Quantity</p>
+
+            <!-- Quantity Selector (Improved Design) -->
+            <div class="d-flex align-items-center mt-3">
+                <label class="font-weight-bold">Quantity:</label>
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-outline-secondary btn-sm" onclick="decreaseQuantity(this)">−</button>
+                    <input type="text" class="form-control text-center mx-2 w-25" id="qty" value="1" min="1" max="3" readonly>
+                    <button class="btn btn-outline-secondary btn-sm" onclick="increaseQuantity(this)">+</button>
+                </div>
+            </div>
+
+            @if (ViewBag.InCart)
+            {
+                <button class="btn btn-success mt-3 px-4 py-2" onclick="goToCart()">Go to Cart</button>
+            }
+            else
+            {
+                <button class="btn btn-success mt-3 px-4 py-2 add-to-cart" id="add-cart-button-@Model.Id" onclick="addToCart(@Model.Id)">Add to Cart</button>
+                
+            }
+            
+            
+        </div>
+    </div>
+</div>
+
+@if (Products.Any())
+{
+    <div class="container-fluid mt-4 p-4">`
+        <h2 class="mb-4 category-label"> Products related to this item </h2>
+        <div class="row align-items-start">    
+
+    @foreach (var product in Products)
+    {
+        <!-- Product Card 1 -->
+        <div class="col-md-3 col-sm-6 col-6 px-1 mb-3">
+            <div class="product-card">
+                <a asp-area="Customer" asp-controller="Home" asp-action="ViewProduct" asp-route-id="@product.Id">
+                    <img src="@product.ImageUrl" alt="Product Image" class="product-img">
+                </a>
+                <div class="product-info">
+                    <h5>@(product.Name.Length > 21 ? product.Name.Substring(0, 18) + "..." : product.Name)</h5>
+                    <p class="text-dark">Price: <strong>@product.Price rs.</strong></p>
+
+                    <!-- Collapsible More Info -->
+                    <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#product_@product.Id" aria-expanded="false" aria-controls="product_@product.Id">
+                        More Info
+                    </button>
+                    <div id="product_@product.Id" class="collapse mt-2" data-bs-parent="#category-tshirts">
+                        <p><strong>Color:</strong> @product.Color</p>
+                        @if (@product.Quantity > 0)
+                        {
+                            <p><strong>Stock:</strong> @product.Quantity left</p>
+                            <p>Select Quantity: <input type="number" id="qty" min="1" max="3" value="1" /></p>
+
+                            var isInCart = cartItems != null && cartItems.Any(c => c.Products.Id == product.Id);
+                            if (isInCart)
+                            {
+                                <button class="btn btn-primary w-100" onclick="goToCart()">Go to Cart</button>
+                            }
+                            else
+                            {
+                                <button class="btn btn-primary w-100" id="add-cart-button-@product.Id" onclick="addToCart(@product.Id)">Add to Cart</button>
+                            }
+
+
+                        }
+                        else
+                        {
+                            <p><strong>Stock:</strong> Out of Stock</p>
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+    </div>
+</div>
+
+}
+
+
+@section Scripts{
+
+    <script>
+        function increaseQuantity() {
+            let qty = document.getElementById("qty");
+            if (parseInt(qty.value) < 3) {
+                qty.value = parseInt(qty.value) + 1;
+            }
+        }
+    
+        function decreaseQuantity() {
+            let qty = document.getElementById("qty");
+            if (parseInt(qty.value) > 1) {
+                qty.value = parseInt(qty.value) - 1;
+            }
+        }
+    </script>
+
+}

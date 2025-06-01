@@ -1,0 +1,40 @@
+﻿@{
+    var OrderStatus = ViewData["StatusType"]?.ToString();
+
+	ViewData["Title"] = "Orders";
+}
+
+@model List<Orders>
+
+<h2>Pending Orders</h2>
+<input type="hidden" id="status-type" value="@OrderStatus" />
+
+<table id="pendingOrdersTable" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#Order Id</th>
+            <th scope="col">#User Id</th>
+            <th scope="col">#Product Id</th>
+            <th scope="col">Date</th>
+            <th scope="col">Total (rs)</th>
+            <th scope="col">Payment Mode</th>
+            <th scope="col">Status</th>
+            @if (OrderStatus == "Approved")
+            {
+                <th scope="col">Approved Date</th>    
+            }
+
+            @if (OrderStatus == "Rejected")
+            {
+                <th scope="col">Rejected Date</th>
+            }
+        </tr>
+    </thead>
+
+</table>
+
+@section Scripts{
+    <script src="~/js/Orders.js"></script>
+}
+
+

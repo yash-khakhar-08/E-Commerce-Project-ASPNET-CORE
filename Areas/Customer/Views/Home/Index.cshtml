@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Home";
+
+    var cartItems = ViewBag.CartItems as List<MyCart>;
+}
+                                            
+
+@model List<Category>
+
+
+<div class="container-fluid mt-2 banner-container" style="margin-left:0;margin-right:0;">
+    <div id="myCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="\images\Banners\banner-1.gif" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="\images\Banners\banner-2.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="\images\Banners\banner-3.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- product design starts category t-shirts -->
+
+<div class="container-fluid mt-4 p-4" id="category-tshirts">
+    @foreach (var category in Model)
+    {
+        @if (category.Products != null && category.Products.Any())
+        {
+            <h2 id="category_@category.Id">Category: @category.Name - @category.SectionName</h2>
+            <div class="row align-items-start">
+                <!-- Product Card 1 -->
+                @foreach (var product in category.Products)
+                {
+                    <div class="col-md-3 col-sm-6 col-6 px-1 mb-3">
+                        <div class="product-card">
+                            <a asp-area="Customer" asp-controller="Home" asp-action="ViewProduct" asp-route-id="@product.Id">
+                                <img src="@product.ImageUrl" alt="Product Image" class="product-img">
+                            </a>
+                            <div class="product-info">
+                                <h5>@(product.Name.Length > 21 ? product.Name.Substring(0, 18) + "..." : product.Name)</h5>
+
+                                <p class="text-muted">Price: <strong>@product.Price rs.</strong></p>
+
+                                <!-- Collapsible More Info -->
+                                <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#product_@product.Id" aria-expanded="false" aria-controls="product_@product.Id">
+                                    More Info
+                                </button>
+                                <div id="product_@product.Id" class="collapse mt-2" data-bs-parent="#category-tshirts">
+                                    <p><strong>Category:</strong> @category.Name</p>
+                                    @if(@product.Quantity > 0){
+                                        <p><strong>Stock:</strong> @product.Quantity left</p>
+
+                                       
+                                        var isInCart = cartItems != null && cartItems.Any(c => c.Products.Id == product.Id);
+                                        
+
+                                        @if (isInCart)
+                                        {
+                                            <button class="btn btn-primary w-100" onclick="goToCart()">Go to Cart</button>
+                                        }
+                                        else
+                                        {
+                                            <p>Select Quantity: <input type="number" id="qty" min="1" max="3" value="1" /></p>
+                                            <button class="btn btn-primary w-100" id="add-cart-button-@product.Id" onclick="addToCart(@product.Id)">Add to Cart</button>
+                                        }
+
+                                        
+                                    } else{
+                                    <p><strong>Stock:</strong> Out of Stock</p>
+                                    }
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        }
+    }
+</div>
+
+<!-- product design ends -->

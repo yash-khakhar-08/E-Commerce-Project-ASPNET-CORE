@@ -1,0 +1,164 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+    .col-6 {
+        padding: 0px; /* Adds better spacing */
+    }
+
+    .product-img {
+        height: 150px; /* Reduce image height for small screens */
+    }
+
+    .product-card {
+        padding: 0px;
+        margin: 5px 0;
+    }
+
+    .categoory-label {
+        font-size: 1.5rem;
+    }
+
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom:60px;
+}
+
+.custom-cart-button:hover {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.banner-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.carousel-inner img {
+    height: 500px;
+    width: 100%; /* Ensure full width */
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+}
+
+/* product design start */
+
+
+
+
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.btn-toggle {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+/*  product design ends */
+
+/* cart design */
+
+.shpcart-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.cart-item {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+}
+
+    .cart-item img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .cart-item .details {
+        flex: 1;
+        padding-left: 15px;
+    }
+
+        .cart-item .details h5 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .cart-item .details .price {
+            font-weight: bold;
+            color: #B12704; /* Amazon-like red price */
+        }
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background: white;
+    }
+
+.quantity-controls input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    background: transparent;
+    }
+
+.remove-btn {
+    color: #ff5050;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* cart desing over*/
+

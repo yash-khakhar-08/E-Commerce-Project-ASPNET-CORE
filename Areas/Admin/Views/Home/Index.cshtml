@@ -1,0 +1,83 @@
+﻿@{
+	ViewData["Title"] = "Admin";
+}
+
+@section Styles {
+	<link rel="stylesheet" href="~/css/admin_home.css" />
+}
+
+<h1>
+	Admin Panel
+</h1>
+
+<div class="container-fluid my-5">
+    <div class="row g-4">
+
+        <!-- Add Product -->
+        <div class="col-md-6 col-lg-3">
+            <a asp-action="Index" asp-controller="Category" class="text-decoration-none">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Categories</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Add Category -->
+        <div class="col-md-6 col-lg-3">
+            <a asp-action="Index" asp-controller="Product" class="text-decoration-none">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Products</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Pending Orders -->
+        <div class="col-md-6 col-lg-3">
+            <a asp-action="Orders" asp-controller="Home" asp-route-statustype="Pending" class="text-decoration-none">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Pending Orders</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Approved Orders -->
+        <div class="col-md-6 col-lg-3">
+            <a asp-action="Orders" asp-controller="Home" asp-route-statustype="Approved" class="text-decoration-none">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Approved Orders</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Rejected Orders -->
+        <div class="col-md-6 col-lg-3">
+            <a asp-action="Orders" asp-controller="Home" asp-route-statustype="Rejected" class="text-decoration-none">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Rejected Orders</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- View Customer -->
+        <div class="col-md-6 col-lg-3">
+            <a asp-action="ViewCustomer" asp-controller="Home" class="text-decoration-none">
+                <div class="card text-center shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">View Customers</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
