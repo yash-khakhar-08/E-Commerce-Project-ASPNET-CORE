@@ -13,7 +13,8 @@ The backend used ASP.NET Core MVC for clean, structured code with a repository l
 Features (User side):-<br>
 ✅ User authentication (Login/Register)<br>
 ✅ Product listing & search<br>
-✅ Add to cart and place order ✅ View order and cancel order<br>
+✅ Add to cart and place order<br>
+✅ View order and cancel order<br>
 ✅ Forgor Password using email<br>
 
 Features (Admin side):-<br>
