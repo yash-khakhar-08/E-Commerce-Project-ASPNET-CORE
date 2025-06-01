@@ -9,7 +9,7 @@
 # Update appsettings.json file
 ![Screenshot (245)](https://github.com/user-attachments/assets/76765fad-dd36-4915-b02a-eb671fc9d83f)  
 -> in this define database connection url, which will look like this:<br>
-  -> Server=LAPTOP-0HQRNHSO\\SQLEXPRESS;Database=marketmatrix;Trusted_Connection=True;TrustServerCertificate=True (update this according to your server name in SSMS)<br>
+  "ConnectionUrl": "Server=LAPTOP-0HQRNHSO\\SQLEXPRESS;Database=marketmatrix;Trusted_Connection=True;TrustServerCertificate=True" <br> (update this according to your server name in SSMS)<br>
 -> In EmailSettings, define your gmail and gmail-app password for sending email used for password reset.
 
 
